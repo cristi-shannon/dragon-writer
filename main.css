@@ -25,10 +25,32 @@
   display: inline;
 }
 
+/*
+.container {
+    max-width: 720px;
+}
+*/
+
 #sign-up {
     background-color: #C9C9AD;
+    float: right;
+    width: 50%;
     
 }
+
+#legion {
+    background-color: #C9C9AD;
+    float: left;
+    width: 50%;
+    
+}
+
+/*
+.col-md-6 {
+    max-width: 720px;
+    
+}
+*/
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
