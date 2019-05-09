@@ -50,12 +50,27 @@ img {
     border-style: none;
 }
 
+#download {
+    background-color: #C9C9AD;
+    max-width: 100%;
+}
+
 /*
 .col-md-6 {
     max-width: 720px;
     
 }
 */
+
+.jumbotron {
+  background-color: darkseagreen;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+    position: static;
+    max-height: 100%;
+    max-width: 100%;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
