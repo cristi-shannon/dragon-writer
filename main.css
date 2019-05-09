@@ -45,6 +45,11 @@
     
 }
 
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
 /*
 .col-md-6 {
     max-width: 720px;
