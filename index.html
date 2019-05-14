@@ -2,45 +2,60 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Dragon Writer App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="main.css">
 </head>
 
 
  <body>
-    <div class="nav">
-      <div class="container" id="nav-bar">
-        <ul class="pull-right">
-            <li><a href="https://engl110finalproject.slack.com/files/UJ6QC3ZA4/FJ5LAPA2F/buttonparch.png"></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Download</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
      
      
-<div class="container">
-    <div class="container" id="legion">
-        <div class="row">
-            <div class="col" style= "width: 400px; float: left">
-                <img src="Avatar.png" style="width: 400px">
-                <h2>Join a Legion. Begin Your Spartan Journey.</h2>
-            </div>
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toogle="collapse" data-target="#navbar-collapse-main">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+            <a class="navbar-brand" href="#"><img src="new-logo.png"></a>
         </div>
-     </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a class="active">Home</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
      
+    
      
+<div class="padding" id="sign-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="new-logo.png" id="logo">
+                <h4 id="pixel">Learn. Network. Succeed.</h4>
+                <a href="#" class="btn btn-default btn-lg">Download the App</a>
+            </div>
      
-<div class="container" id="sign-up">
-            <div class="row">
-<form action="/action_page.php" style="border:1px solid #ccc">
-  <div class="col" "width: 100px; float: right">
-    <h1>Sign Up</h1>
+<form action="sign-up.html" style="border:50px; background-color: #E5A823">
+  <div class="col-md-6">
+    <h1 id="pixel">Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
@@ -54,8 +69,7 @@
   <select>
     <option value="0">Select legion:</option>
     <option value="1">Major</option>
-    <option value="2">Minor</option>
-    <option value="3">Certificate</option>
+    <option value="2">Minor/Certificate</option>
   </select>
         </div>
                 
@@ -149,15 +163,79 @@ document.addEventListener("click", closeAllSelect);
     </div>
 </form> 
     </div>
-    </div>
-    
-    <div class="features">
-    <div class="container-fluid" id="screens">
-        <div class="col">
-            <img src="main%20screen.png" style="float: left">
+        
+        </div>
+     </div>
+   
+  
+<div class="padding" id="download">
+    <div class="container">
+        <div class="row">    
+            <div class="col-md-6">
+            <img src="main%20screen.png">
+            </div>
+            
+            <div class="col-md-6">
+<!--                <h2>All About the DragonWriter App</h2>-->
+                <p id="download-text">DragonWriter is an app for SJSU Professional and Technical Writing students to track their progress toward a degree, minor, or certificate.</p>
+                <p id="download-text">At the top of the Mountain rests your academic goal. All that stands in your way is a treacherous path of classes and a baby dragon who’s growing bigger by the day. Forge ahead toward the peak by completing courses and gain extra skills for your encounter with the Dragon.</p>
+                <br>
+            <div class="download text-center">
+                <img src="app-store-2.jpg" id="apple">
+                <img src="google-play-2.jpg" id="google">
+            </div>
             </div>
         </div>
+     </div>
+</div>
+     
+     
+     
+     
+     
+     
+<div class="padding" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <h4 id="pixel">Sync with Canvas</h4>
+                <img src="canvas-pixel.png">
+                <p>DragonWriter automatically syncs with your Canvas account to show real-time progress in each class you're enrolled in.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <h4 id="pixel">Compare your progress</h4>
+                <img src="leaderboard.png">
+                <p>View the leaderboard to see how you measure up to other students in the program.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <h4 id="pixel">Track your skills</h4>
+                <img src="shield%20new.png">
+                <p>Complete skills in and out of the classroom to collect jewels for your Writer Skills Shield.</p>
+            </div>
+        </div>
+    </div>    
+</div>    
+     
+     
+ <footer class="container-fluid text-center" id="contact">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Contact Us</h3>
+            <br>
+            <h4><a href="#">supportteam@dragonwriter.com</a></h4>
+            <h4><a href="#">mark.thompson@sjsu.edu</a></h4>
+        </div>
+        <div class="col-sm-6">
+            <h3>Connect</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
     </div>
+
+</footer>      
+     
+     
 
 </body>
 </html>
