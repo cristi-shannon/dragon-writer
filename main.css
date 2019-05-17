@@ -19,7 +19,7 @@ html, body {
 }
 
 .btn {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .btn:hover {
@@ -59,6 +59,11 @@ html, body {
     font-family: pixelmix;
     padding-bottom: 40px;
 }
+
+#pixel-nopad {
+    font-family: pixelmix;
+}
+
 
 #features img {
    width:100px;
@@ -140,25 +145,34 @@ footer {
     color: #d5d5d5;
 }
 
-footer a {
+footer a:link {
     color: #d5d5d5;
 }
 
-footer a:hover {
+footer a:hover, a:visited {
     color: #E8B139;
     text-decoration: none;
 }
 
-.fa {
+/*
+a:visited {
+    color: #E8B139
+    text-decoration: none; 
+}
+*/
+
+.fa:link {
     padding: 15px;
     font-size: 25px;
     color: #d5d5d5;
 }
 
-.fa:hover {
+.fa:hover, .fa:visited {
     color: #E8B139;
     text-decoration: none;
 }
+
+
 
 @media (max-width: 760px) {
     .landing-text h1 {
@@ -221,12 +235,23 @@ hr {
 }
 
 
+
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+
 /* Set a style for all buttons */
 button {
   background-color: #0055A2;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 8px 15px;
   border: none;
   cursor: pointer;
   width: 100%;
