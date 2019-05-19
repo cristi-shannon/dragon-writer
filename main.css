@@ -12,6 +12,8 @@ html, body {
     text-align: center;
     vertical-align: middle;
     background-color: #E8B139;
+    border: 500px;
+    border-color: #0055A2;
     position: absolute;
     left: 370px;
     top: 250px;
