@@ -12,16 +12,10 @@ html, body {
     text-align: center;
     vertical-align: middle;
     background-color: #E8B139;
-    border: 500px;
-    border-color: #0055A2;
     position: absolute;
     left: 370px;
     top: 250px;
     width: 45%;
-}
-
-h5 {
-    font-size: 40px;
 }
 
 .btn {
@@ -69,36 +63,11 @@ h5 {
 #pixel-nopad {
     font-family: pixelmix;
 }
-#download img {
-    width: 500px;
-    height: 500px;
-    object-fit: scale-down;
-}
 
-#learn img {
-      width:300px;
-   height:300px;
 
-/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
-    object-fit:scale-down;
-} #network img {
-      width:300px;
-   height:300px;
-
-/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
-    object-fit:scale-down;
-} #succeed img {
-   width:300px;
-   height:300px;
-
-/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
-    object-fit:scale-down;
-
-}
-
-#home-page-basics img {
-   width:300px;
-   height:300px;
+#features img {
+   width:100px;
+   height:100px;
 
 /*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
     object-fit:scale-down;
@@ -144,11 +113,8 @@ h5 {
     background-color: #D9D9BB;
 }
 
-#learn, #network, #succeed, #home-page-basics {
+#features {
     background-color: #D9D9BB;
-    margin: auto;
-    text-align: center;
-    font-size: 100%;
 }
 
 /*
@@ -236,12 +202,6 @@ a:visited {
     max-width: 720px;
     
 }
-
-/*
-.col-12 {
-    max-width: 720px;
-}
-*/
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
