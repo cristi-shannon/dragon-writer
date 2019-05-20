@@ -66,6 +66,12 @@ html, body {
     font-family: pixelmix;
 }
 
+#download img {
+    width: 500px;
+    height: 500px;
+    object-fit: scale-down;
+}
+
 
 #learn img {
       width:300px;
